@@ -1,3 +1,15 @@
+**Tic-tac-to game**
+
+This repo contains front-end part implementation of tic-tac-toe, along with provided back-end code.
+Solution is built using react components + scss for styles + axios for backend. I decided to avoid using Redux or other built-in data flow managment patterns in means of simplicity.
+
+Things that could be done better:
+- Logging of the game history. Since there is no way to get player moves in proper order, this information is stored at front-end part and resets every time the page is reloaded. Another approach could be using a localStorage, but still there is no obvious way to decide whether logging must be reset (due to two cases - new game can be started or react components can be remounted still having the same game in process).
+
+Overall app can be started using `npm run start`.
+
+Original task is below.
+
 Test assignment for the front-end developer position applicants
 ----
 This repository contains the back-end component for a game of **tic-tac-toe** against the AI. Your assignment is to develop the front-end.
